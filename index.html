@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dae83b0cb7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div id="header">
+     <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm Katelyn!<br></h1>
+        </div>
+        
+
+    </div>
+</div>
+
+<!-- about -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! My names Katelyn, or Katey for short.
+                I love to travel, skydive, exercise, and watch lots of action movies.
+                I would best describe myself as adventurous. Whether that is by trying a new 
+                food, jumping out of a plane, or challenging myself with a new programming language, 
+                I enjoy the barriers outside my comfort zone.  This is also the main reason why 
+                computer science has been such a great learning experience for me, as it continues to challenge me everyday.</p>
+              
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Work Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><strong>HTML</strong></span><br>CodeCademy Bootcamp, Youtube</li>
+                        <li><span><strong>CSS</strong></span><br>CodeCademy Bootcamp, Youtube</li>
+                        <li><span><strong>Python</strong></span><br>Youtube, Fullerton College Course</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><strong>PC Service Technician + Admin Assistant, US Computers</strong></span><br>August 2023-Present</li>
+                        <p>
+                            My responsibilities in this role included software installation, providing tech support to clients, and troubleshooting on various PCs. 
+                          I also perfomed administrative work such as the preparation of marketing presentations as well as sending out invoices, phone calls, and sales orders.
+                          This position taught me a lot about computers that I didnt know such as the difference in processors, storage space, and functionality features within each PC.
+                          </p>
+                        <li><span><strong>Coding Instrcutor, CodeNinjas</strong></span><br>May 2023-October 2023</li>
+                        <p>
+                            My responsibilities in this role included teaching a varity of STEM concepts to children.  
+                            Some examples include game development, Scratch Jr, and robotics. I worked at various elementary schools as well as at the main facility. This role introduced me to beginner coding sites, as well as learning how to teach others.
+                        </p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+            
+                <ul>
+                    <li><span><strong>AA Business Administration, Fullerton College</strong></span><br>Fall 2021-Fall 2023</li>
+                    <p>I obtained my associates in Business Administration August of 2023. I enjoyed learning about business but soon realized I had a passion for computer science after being introduced to it by my colleagues and completing a few bootcamps and projects. </p>
+                    <li><span><strong>AA Computer Science, Fullerton College</strong></span><br>Fall 2023-Present</li>
+                    <p>Once my transfer degree for computer science has been complete, I plan to transfer to an in state school and complete my bachelors. </p>
+                </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML</h2>
+                <p>I have learned the basics of HTML thorugh a bootcamp called CodeAcademy. 
+                    I was able to obtain my certification.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-paint-roller"></i>
+                <h2>CSS</h2>
+                <p>I mainly learned the basics of CSS thorugh a bootcamp called CodeAcademy. 
+                    I obtained my certification.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Python, Javascript</h2>
+                <p>I have learned the basics of Python and Javascript through school, youtube, and bootcamps. 
+                    I obtained my certification.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- my work/ projects -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Travel Photo Gallery</h3>
+                    <p>In this HTML and CSS project, Ive put a few of my favorite travel pictures on display. This project helped to teach me a lot about the proper use of margin and padding, as well as implementing images into code.</p>
+                    <a href="mywork/index.html" a href="mywork/style.css" a href="mywork/images"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Fitness Form</h3>
+                    <p> I made this form because I enjoy teaching others about fitness. For this project, I used HTML/CSS. This project helped me better understand how to create buttons, lists, and textareas. 
+                    </p>
+                    <a href="mywork2"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>  
+            <div class="work">
+                <img src="images/work-3.pdf">
+                <div class="layer">
+                    <h3>Intro to Programming Flowchart Discussions</h3>
+                    <p>In this course, taken at Fullerton College, I was introduced to programming and flowcharts. In these projects you will find examples of simple programs I created, as well as their matching flowcharts. </p>
+                    <a href="mywork3"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>galvankatelyn218@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(562)521-3319</p>
+                <a href="images/myresume.pdf" download class="btn btn2">Download My PDF Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>    
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with GreatStack (YT Tutorial)</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx89AzxEp8nHkRdzyJVFuPgzyuXW096FhUF12KI3cU7HlBns5aTjiuoaWLBBIJsssFz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout (function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

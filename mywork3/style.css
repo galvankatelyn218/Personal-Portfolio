@@ -1,0 +1,41 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 0;
+    background: pink;
+    color: black;
+}
+
+.header{
+    color: block;
+}
+
+.discussion{
+    display: inline-block;
+    border : 1px solid hsl(0, 0%, 60%);
+    margin: 70px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+}
+.discussion .description{
+    padding: 20px;
+    text-align: center;
+    
+}
+.discussion:hover{
+    border: 1px solid hsl(0, 0%, 20%)
+}
+
+
+.discussion img{
+    width: 100%;
+    height: auto;
+}
+
